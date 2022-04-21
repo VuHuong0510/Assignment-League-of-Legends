@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+}
+
+.container {
+    width: 980px;
+    margin: 0 auto;
+    background-color: #fff;
+    animation: fadeIn ease 2s;
+}
+
+.container img:hover {
+    opacity: 0.8;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 10%;
+    padding: 10px 0;
+}
+
+.nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.nav ul li {
+    display: inline-block;
+    padding: 0 8px;
+    line-height: 40px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: smaller;
+}
+
+.nav ul li a:hover {
+    text-decoration: underline;
+    color: #ff0000;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.feed a {
+    text-decoration: none;
+    color: #000;
+}
+
+.feed a:hover {
+    color: #ff0000;
+}
+
+.news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1px;
+}
+
+.item {
+    margin-bottom: 30px;
+    padding: 0 10px;
+    text-align: justify;
+}
+
+.img img {
+    width: 100%;
+}
+
+.text {
+    padding-right: 20px;
+}
+.text h3 {
+    padding: 14px 0;
+}
+
+.banner1 {
+    padding: 0 10px;
+}
+
+.banner1 img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    line-height: 70px;
+}
+
+.footer span::selection{
+    background-color: #fff;
+    color: #000;
+}
+
+.footer span {
+    margin-left: 10px;
+    font-size: smaller;
+}
+
+.search {
+    float: right;
+    margin-right: 16px;
+}
+
+.search input {
+    height: 30px;
+    border: 1px solid #FFB800;
+    margin-right: 20px;
+    padding: 0 50px 0 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+.search button {
+    height: 30px;
+    border: 1px solid #FFB800;
+    background-color: #FFB800;
+    color: #fff;
+    padding: 0 20px;
+}
+
+::selection {
+    background-color: #000;
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.5;
+        transform: translateY(-500px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
